@@ -1,0 +1,208 @@
+body,
+body * {
+    box-sizing: border-box;
+    vertical-align: top;
+    padding: 0;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 1920px;
+}
+header {
+    box-sizing: border-box;
+    display: flex;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.103);
+}
+.header-left {
+    display: flex;
+    gap: 2rem;
+    margin-left: 5rem;
+}
+.header-right{
+    display: flex;
+    gap: 2rem;
+    margin-right: 5rem;
+}
+
+header a {
+    text-decoration: none;
+    color: Black;
+    font-size: 0.9rem;
+}
+ 
+header a:hover, a:active {
+    padding-bottom: 1rem;
+    border-bottom: 1.3px solid rgb(62, 62, 255);
+}
+
+.header-left-logo:hover, .header-left-logo:active {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.search-section{
+    margin: 1rem 10rem;
+}
+
+.search-inputs{
+    display: flex;
+    gap: 1rem;
+    
+}
+
+.what-search input, .where-search input{
+    border: 1px solid rgba(0, 0, 0, 0.384);
+    border-radius: 5px;
+    width: 100%;
+    padding: 0.7rem 0;
+    padding-left: 4.5rem;
+}
+
+.what-search input:focus, .where-search input:focus{
+    border: 1px solid rgba(0, 0, 0, 0);
+    outline-style:solid;
+    outline-width: 0.5px;
+    outline-color: rgb(62, 62, 255);
+    /* border: 1px solid rgb(62, 62, 255); */
+}
+
+.what-search input:hover, .where-search input:hover{
+    border: 1px solid rgba(62, 62, 255, 0.219);
+}
+
+.what-search, .where-search{
+    width: 100%;
+
+}
+
+.where-search input {
+    padding-left: 5rem;
+}
+
+.search-input-what-p, .search-input-where-p {
+    position: absolute;
+    z-index: 100;
+    margin-top: 0.6rem;
+    margin-left: 1rem;
+
+}
+
+.button-big {
+    text-decoration: none;
+    padding: 0.7rem 1.2rem;
+    border-radius: 10px;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background-color: rgba(43, 43, 179, 0.945);
+}
+
+.button-big:hover {
+    background-color: rgb(80, 80, 228);
+}
+
+.button-big:focus {
+    outline: none;
+    text-decoration: none;
+    padding: 0.7rem 1.2rem;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background-color: rgb(14, 14, 168);
+}
+
+
+
+/* /////////// JOBS ////////////// */ 
+
+.main-jobs {
+    margin: 1rem 8rem;
+
+    display: flex;
+    align-items: start;
+    gap: 3rem;
+}
+
+
+
+
+/* .scroll-one-job::-webkit-scrollbar {
+    display: none;
+} */
+
+.scroll-one-job{
+    height: calc(100vh - 8rem); 
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 1rem;
+}
+
+.jobs {
+    margin-top: 5rem;
+    flex: 2;
+}
+
+.one-job {
+    position: sticky; 
+    top: 0;
+    /* /////////// */
+    flex: 3;
+    padding: 3rem 0rem 0rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.356);;
+    border-radius: 10px;
+}
+
+
+.jobs-one-container {
+    background-color: white;
+    padding: 2rem 1rem;
+    text-align: left;
+    border: 1px solid rgba(0, 0, 0, 0.356);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.jobs-one-container:active {
+    border: 1px solid rgb(62, 62, 255);
+}
+
+.ad-name {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.company-name {
+    margin-bottom: 0.5rem;
+}
+
+.job-location {
+    margin-bottom: 1rem;
+}
+
+.job-salary {
+    padding: 0.5rem;
+    border-radius: 3px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.048);
+    margin-bottom: 1rem;
+}
+.short-description{
+    margin-bottom: 0.5rem;
+    margin-left: 1.5rem;
+}
+
+.job-more-details {
+    margin-top: 1rem;
+}
+
+.ad-date {
+    float: left;
+    margin-right: 2rem;
+}
+
+/* .footer-section {
+    margin-top: 10rem;
+} */
