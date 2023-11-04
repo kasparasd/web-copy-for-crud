@@ -2,8 +2,10 @@ let jobsClass = document.querySelector(".jobs");
 
 
 //fetch function
-fetch(`http://localhost:3000/all-jobs`)
-    .then(res=>res.json())
+// fetch(`http://localhost:3000/all-jobs`)
+// fetch(`https://deepakmahakale.com/api/users.json`)
+fetch(`https://kasparasd.github.io/api-crud-1/api/jobs.json`)
+.then(res=>res.json())
     .then(json=>{
         json.map(item=>{
             jobsClass.append(jobs(item))
@@ -45,12 +47,13 @@ fetch(`http://localhost:3000/all-jobs`)
     jobsClass.addEventListener('click', event=>{
         let oneJobClass = document.querySelector(".one-job-container");
 
-        
-        fetch(`http://localhost:3000/all-jobs?id=${event.target.id}`)
+        fetch(`https://kasparasd.github.io/api-crud-1/api/one-job.json`)
         .then(res=>res.json())
         .then(json=>{
             json.map(item=>{
-                oneJobClass.replaceWith(oneJob(item))
+                if(item.id == event.target.id) {
+                    oneJobClass.replaceWith(oneJob(item))
+                }
             })
         })
     
@@ -58,7 +61,6 @@ fetch(`http://localhost:3000/all-jobs`)
             let job=document.querySelector(".one-job-container")
                 job.innerHTML = 
             `
-            
              <div class="job-summary">
                 </div>
                 <h2 id=${item.id} class="ad-name">${item["ad-name"]}</h2>
