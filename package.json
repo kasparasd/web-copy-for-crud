@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "dead-server"
+    "dev": "dead-server",
+    "start": "json-server --watch ./database/db.json"
   },
   "keywords": [],
   "author": "Kasparas",
   "license": "MIT",
   "devDependencies": {
     "dead-server": "^1.0.9"
+  },
+  "dependencies": {
+    "json-server": "^0.17.4"
   }
 }

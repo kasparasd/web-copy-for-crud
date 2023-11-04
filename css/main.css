@@ -120,43 +120,39 @@ header a:hover, a:active {
 
 .main-jobs {
     margin: 1rem 8rem;
-
     display: flex;
     align-items: start;
-    gap: 3rem;
+    gap: 1rem;
 }
-
-
-
 
 /* .scroll-one-job::-webkit-scrollbar {
     display: none;
 } */
 
 .scroll-one-job{
-    height: calc(100vh - 8rem); 
+    height: calc(100vh - 12rem); 
     overflow-x: hidden;
     overflow-y: auto;
-    padding: 1rem;
 }
 
 .jobs {
     margin-top: 5rem;
     flex: 2;
 }
-
 .one-job {
     position: sticky; 
     top: 0;
     /* /////////// */
     flex: 3;
-    padding: 3rem 0rem 0rem 1rem;
+    /* padding: 3rem 0rem 0rem 1rem; */
     border: 1px solid rgba(0, 0, 0, 0.356);;
     border-radius: 10px;
 }
 
 
 .jobs-one-container {
+    z-index: 100;
+    cursor: pointer;
     background-color: white;
     padding: 2rem 1rem;
     text-align: left;
@@ -203,6 +199,34 @@ header a:hover, a:active {
     margin-right: 2rem;
 }
 
+/* ////////////////ONE JOB on right//////////////// */
+
+.job-summary {
+    padding: 2rem 1rem 0rem 1rem;
+}
+.one-job-ad-name{
+    margin-bottom: 1rem;
+}
+.one-job-company-name{
+    margin-bottom: 0.5rem;
+}
+.one-job-job-location{
+    margin: 0.5rem 0;
+}
+.one-job-salary{
+    margin: 0.5rem 0;
+}
+
+.one-job-features {
+    padding-bottom: 1rem;
+}
+.one-job-full-description {
+    padding: 2rem 1rem 0rem 1rem;
+}
+.one-job-border{
+    border-bottom: 3px solid rgba(0, 0, 0, 0.075);
+    
+}
 /* .footer-section {
     margin-top: 10rem;
 } */
