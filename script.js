@@ -72,6 +72,11 @@ fetch(`https://kasparasd.github.io/api-crud-1/api/jobs.json`)
                 <div class="one-job-border"></div>
                 <div class="scroll-one-job full-job-ad">
                     <div class="one-job-full-description">
+                        <h3>Full job description</h3>
+                        <p><b>${item["ad-name"]}</b></p>
+                        <p><b>Location: </b>${item["job-location"]}</p>
+                        <p><b>Start Date: </b>${item["start-date"]}</p>
+                        <p><b>Contact: </b>${item["contact"]}</p>
                         <h3>Benefits</h3>
                         <ul>
                             <li>${item["benefit-1"]}</li>
@@ -85,12 +90,6 @@ fetch(`https://kasparasd.github.io/api-crud-1/api/jobs.json`)
                             <li>${item["benefit-9"]}</li>
                             <li>${item["benefit-10"]}</li>
                         </ul>
-                        <h3>Full job description</h3>
-
-                        <p><b>${item["ad-name"]}</b></p>
-                        <p><b>Location: </b>${item["job-location"]}</p>
-                        <p><b>Start Date: </b>${item["start-date"]}</p>
-                        <p><b>Contact: </b>${item["contact"]}</p>
                         <p><b>About the Organization:</b></p>
                         <p>${item["about-organization-1"]}</p>
                         <p>${item["about-organization-1"]}</p>
