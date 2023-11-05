@@ -33,7 +33,7 @@ header a {
     font-size: 0.9rem;
 }
  
-header a:hover, a:active {
+header > div a:hover, header > div a:active {
     padding-bottom: 1rem;
     border-bottom: 1.3px solid rgb(62, 62, 255);
 }
@@ -104,15 +104,6 @@ header a:hover, a:active {
     background-color: rgb(80, 80, 228);
 }
 
-.button-big:focus {
-    outline: none;
-    text-decoration: none;
-    padding: 0.7rem 1.2rem;
-    color: white;
-    font-size: 0.8rem;
-    font-weight: 600;
-    background-color: rgb(14, 14, 168);
-}
 
 
 
@@ -141,7 +132,7 @@ header a:hover, a:active {
 }
 .one-job {
     position: sticky; 
-    top: 0;
+    top: 1rem;
     /* /////////// */
     flex: 3;
     /* padding: 3rem 0rem 0rem 1rem; */
@@ -201,8 +192,8 @@ header a:hover, a:active {
 
 /* ////////////////ONE JOB on right//////////////// */
 
-.job-summary {
-    padding: 2rem 1rem 0rem 1rem;
+.one-job-container{
+    padding: 1rem 1rem;
 }
 .one-job-ad-name{
     margin-bottom: 1rem;
@@ -227,6 +218,50 @@ header a:hover, a:active {
     border-bottom: 3px solid rgba(0, 0, 0, 0.075);
     
 }
-/* .footer-section {
-    margin-top: 10rem;
-} */
+
+.one-job-company-name{
+    border-bottom: 1px solid black;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.756);
+}
+
+.one-job-job-location{
+    margin: 1rem 0;
+    color: rgba(0, 0, 0, 0.756);
+}
+
+.one-job-salary{
+    color: rgba(0, 0, 0, 0.904);
+}
+
+.one-job-features{
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    
+}
+
+.apply-now{
+    margin: 0;
+    background-color: rgba(43, 43, 179, 0.945);
+    border-radius: 7px;
+    color: white;
+    padding: 0.4rem 1rem;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.apply-now:hover {
+    background-color: rgb(80, 80, 228);
+}
+
+
+.bookmark-icon, .block-icon{
+    margin: 0;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.385);
+}
+
+
+

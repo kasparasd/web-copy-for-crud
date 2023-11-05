@@ -64,9 +64,9 @@ fetch(`https://kasparasd.github.io/api-crud-1/api/jobs.json`)
                     <p class="one-job-job-location">${item["job-location"]}</p>
                     <p class="one-job-salary">${item["job-salary"]}</p>
                     <div class="one-job-features">
-                        <a href="#">Apply now</a>
-                        <a href="#">Bi</a>
-                        <a href="#">DSi</a>
+                        <a class="apply-now" href="#">Apply now</a>
+                        <a class="bookmark-icon" href="#"><i class="fa fa-bookmark fa-2x"></i> </a>
+                        <a class="block-icon" href="#"><i class="fa fa-ban fa-2x"></i></a>
                     </div>
                 </div>
                 <div class="one-job-border"></div>
