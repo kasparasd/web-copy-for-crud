@@ -193,7 +193,7 @@ header > div a:hover, header > div a:active {
 /* ////////////////ONE JOB on right//////////////// */
 
 .one-job-container{
-    padding: 1rem 1rem;
+    padding: 1rem 1rem 0rem 1rem;
 }
 .one-job-ad-name{
     margin-bottom: 1rem;
