@@ -121,13 +121,13 @@ header > div a:hover, header > div a:active {
 } */
 
 .scroll-one-job{
-    height: calc(100vh - 15rem); 
+    height: calc(100vh - 13.5rem); 
     overflow-x: hidden;
     overflow-y: auto;
 }
 
 .jobs {
-    margin-top: 5rem;
+    margin-top: 4rem;
     flex: 2;
 }
 .one-job {
@@ -192,33 +192,14 @@ header > div a:hover, header > div a:active {
 
 /* ////////////////ONE JOB on right//////////////// */
 
-.one-job-container{
-    padding: 1rem 1rem 0rem 1rem;
+.job-summary{
+    padding: 1rem 1rem 0.5rem 1rem;
 }
+
 .one-job-ad-name{
-    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    margin-bottom: 0.7rem;
 }
-.one-job-company-name{
-    margin-bottom: 0.5rem;
-}
-.one-job-job-location{
-    margin: 0.5rem 0;
-}
-.one-job-salary{
-    margin: 0.5rem 0;
-}
-
-.one-job-features {
-    padding-bottom: 1rem;
-}
-.one-job-full-description {
-    padding: 2rem 1rem 0rem 1rem;
-}
-.one-job-border{
-    border-bottom: 3px solid rgba(0, 0, 0, 0.075);
-    
-}
-
 .one-job-company-name{
     border-bottom: 1px solid black;
     text-decoration: none;
@@ -226,12 +207,22 @@ header > div a:hover, header > div a:active {
 }
 
 .one-job-job-location{
-    margin: 1rem 0;
+    margin: 0.4rem 0;
     color: rgba(0, 0, 0, 0.756);
 }
 
 .one-job-salary{
     color: rgba(0, 0, 0, 0.904);
+    margin: 0.4rem 0;
+}
+
+.one-job-features {
+    padding-bottom: 0.7rem;
+}
+
+.one-job-border{
+    border-bottom: 3px solid rgba(0, 0, 0, 0.075);
+    
 }
 
 .one-job-features{
@@ -263,5 +254,10 @@ header > div a:hover, header > div a:active {
     color: rgba(0, 0, 0, 0.385);
 }
 
+.one-job-full-description {
+    padding: 1rem 1rem 0rem 1rem;
+}
 
-
+.benefits-list{
+    margin-left: 2rem;
+}

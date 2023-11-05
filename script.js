@@ -58,8 +58,7 @@ fetch(`https://kasparasd.github.io/api-crud-1/api/jobs.json`)
                 job.innerHTML = 
             `
              <div class="job-summary">
-                </div>
-                <h2 id=${item.id} class="ad-name">${item["ad-name"]}</h2>
+                <h2 id=${item.id} class="one-job-ad-name">${item["ad-name"]}</h2>
                     <a class="one-job-company-name" href="#">${item["company-name"]}</a>
                     <p class="one-job-job-location">${item["job-location"]}</p>
                     <p class="one-job-salary">${item["job-salary"]}</p>
@@ -78,7 +77,7 @@ fetch(`https://kasparasd.github.io/api-crud-1/api/jobs.json`)
                         <p><b>Start Date: </b>${item["start-date"]}</p>
                         <p><b>Contact: </b>${item["contact"]}</p>
                         <h3>Benefits</h3>
-                        <ul>
+                        <ul class="benefits-list">
                             <li>${item["benefit-1"]}</li>
                             <li>${item["benefit-2"]}</li>
                             <li>${item["benefit-3"]}</li>
